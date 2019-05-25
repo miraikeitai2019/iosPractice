@@ -15,6 +15,9 @@ class view1: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var label: UILabel!
+    @IBAction func tap(_ sender: UIButton) {
+    }
     
 
     /*
