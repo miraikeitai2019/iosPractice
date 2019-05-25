@@ -12,11 +12,18 @@ class view3: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }
-    
 
+    @IBAction func Tap(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var Label: UILabel!
+    
     /*
     // MARK: - Navigation
 
