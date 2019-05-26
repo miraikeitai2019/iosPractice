@@ -65,6 +65,9 @@
                     <navigationItem key="navigationItem" id="zd8-8L-OCQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="resetButton" destination="rnv-hI-62r" id="050-RK-4WM"/>
+                        <outlet property="startButton" destination="roV-4J-voo" id="PE3-49-i9X"/>
+                        <outlet property="stopButton" destination="lpm-bs-u5p" id="YKY-Fz-ngT"/>
                         <outlet property="timerLabel" destination="1Gc-X5-rVh" id="VmR-8L-n1w"/>
                     </connections>
                 </viewController>
