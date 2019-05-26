@@ -18,6 +18,8 @@
 		37148D9E2298FD2C00DDA287 /* view2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37148D9D2298FD2C00DDA287 /* view2.storyboard */; };
 		37148DA02298FD3700DDA287 /* view3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37148D9F2298FD3700DDA287 /* view3.storyboard */; };
 		37148DA5229902FF00DDA287 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37148DA4229902FF00DDA287 /* ViewController.swift */; };
+		37DE31C3229A2056009EF366 /* title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE31C2229A2056009EF366 /* title.swift */; };
+		37DE31C5229A2060009EF366 /* title.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37DE31C4229A2060009EF366 /* title.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		37148D9D2298FD2C00DDA287 /* view2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = view2.storyboard; sourceTree = "<group>"; };
 		37148D9F2298FD3700DDA287 /* view3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = view3.storyboard; sourceTree = "<group>"; };
 		37148DA4229902FF00DDA287 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37DE31C2229A2056009EF366 /* title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = title.swift; sourceTree = "<group>"; };
+		37DE31C4229A2060009EF366 /* title.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = title.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		37148D822298FC5C00DDA287 /* iospra */ = {
 			isa = PBXGroup;
 			children = (
+				37DE31C1229A2025009EF366 /* title */,
 				37148DA12298FD3C00DDA287 /* view1 */,
 				37148DA22298FD4000DDA287 /* view2 */,
 				37148DA32298FD4300DDA287 /* view3 */,
@@ -104,6 +109,15 @@
 				37148D992298FD0200DDA287 /* view3.swift */,
 			);
 			path = view3;
+			sourceTree = "<group>";
+		};
+		37DE31C1229A2025009EF366 /* title */ = {
+			isa = PBXGroup;
+			children = (
+				37DE31C2229A2056009EF366 /* title.swift */,
+				37DE31C4229A2060009EF366 /* title.storyboard */,
+			);
+			path = title;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +180,7 @@
 			files = (
 				37148D8E2298FC5D00DDA287 /* LaunchScreen.storyboard in Resources */,
 				37148D8B2298FC5D00DDA287 /* Assets.xcassets in Resources */,
+				37DE31C5229A2060009EF366 /* title.storyboard in Resources */,
 				37148D892298FC5C00DDA287 /* Main.storyboard in Resources */,
 				37148DA02298FD3700DDA287 /* view3.storyboard in Resources */,
 				37148D9E2298FD2C00DDA287 /* view2.storyboard in Resources */,
@@ -182,6 +197,7 @@
 			files = (
 				37148DA5229902FF00DDA287 /* ViewController.swift in Sources */,
 				37148D9A2298FD0200DDA287 /* view3.swift in Sources */,
+				37DE31C3229A2056009EF366 /* title.swift in Sources */,
 				37148D842298FC5C00DDA287 /* AppDelegate.swift in Sources */,
 				37148D962298FCD800DDA287 /* view1.swift in Sources */,
 				37148D982298FCEE00DDA287 /* view2.swift in Sources */,
@@ -331,13 +347,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 65Z68H8WQ6;
 				INFOPLIST_FILE = iospra/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fuya.iospra;
+				PRODUCT_BUNDLE_IDENTIFIER = fuya.iospr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -349,13 +365,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 65Z68H8WQ6;
 				INFOPLIST_FILE = iospra/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fuya.iospra;
+				PRODUCT_BUNDLE_IDENTIFIER = fuya.iospr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
