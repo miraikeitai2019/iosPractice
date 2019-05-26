@@ -42,7 +42,7 @@ class view3: UIViewController {
             //        print(t)
             let min = Int(t / 60)
             let sec = Int(t) % 60
-            let msec = Int((t - Double(sec)) * 100.0)//ミリ秒
+            let msec = Int((t - Double(min * 60) - Double(sec)) * 100.0) //ミリ秒
             self.timerLabel.text = String(format: "%02d:%02d:%02d", min, sec, msec)
         }
     }
