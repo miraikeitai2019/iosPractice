@@ -19,49 +19,73 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gc-X5-rVh">
-                                <rect key="frame" x="144.5" y="429.5" width="125" height="37.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="66.5" y="394" width="281.5" height="108"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="108"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="nLV-t3-ENK">
-                                <rect key="frame" x="50" y="517" width="314" height="30"/>
+                                <rect key="frame" x="50" y="504" width="314" height="46"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roV-4J-voo">
-                                        <rect key="frame" x="0.0" y="0.0" width="58" height="30"/>
-                                        <state key="normal" title="Start"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="roV-4J-voo">
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="46"/>
+                                        <color key="tintColor" red="0.038403767692643184" green="0.50178108808290156" blue="0.14032370330435295" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Start">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="START">
+                                                    <attributes>
+                                                        <font key="NSFont" size="28" name="Futura-CondensedMedium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
                                         <connections>
                                             <action selector="startTimer:" destination="SUW-Cs-k9q" eventType="touchUpInside" id="1sc-Nu-ypV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpm-bs-u5p">
-                                        <rect key="frame" x="128" y="0.0" width="58" height="30"/>
-                                        <state key="normal" title="Stop"/>
+                                        <rect key="frame" x="128" y="0.0" width="58" height="46"/>
+                                        <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="28"/>
+                                        <color key="tintColor" red="0.038403767692643184" green="0.50178108808290156" blue="0.14032370330435295" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="STOP"/>
                                         <connections>
                                             <action selector="stopTimer:" destination="SUW-Cs-k9q" eventType="touchUpInside" id="k57-5U-Ohv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnv-hI-62r">
-                                        <rect key="frame" x="256" y="0.0" width="58" height="30"/>
-                                        <state key="normal" title="Reset"/>
+                                        <rect key="frame" x="256" y="0.0" width="58" height="46"/>
+                                        <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="28"/>
+                                        <color key="tintColor" red="0.038403767692643184" green="0.50178108808290156" blue="0.14032370330435295" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="RESET"/>
                                         <connections>
                                             <action selector="resetTimer:" destination="SUW-Cs-k9q" eventType="touchUpInside" id="ISB-qx-RbU"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="bbv-zs-fDu">
+                                <rect key="frame" x="187.5" y="729" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.93051732509999996" green="0.28599240920000002" blue="0.15975904220000001" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <segue destination="ROD-gg-fmQ" kind="show" id="9kQ-we-QPV"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1Gc-X5-rVh" firstAttribute="centerY" secondItem="zJa-fW-rb1" secondAttribute="centerY" id="1ZG-Xn-jFR"/>
                             <constraint firstItem="1Gc-X5-rVh" firstAttribute="centerX" secondItem="zJa-fW-rb1" secondAttribute="centerX" id="E6k-qk-psd"/>
                             <constraint firstItem="CGp-DH-v0t" firstAttribute="trailing" secondItem="nLV-t3-ENK" secondAttribute="trailing" constant="50" id="Tzs-c4-gyb"/>
+                            <constraint firstItem="bbv-zs-fDu" firstAttribute="centerX" secondItem="zJa-fW-rb1" secondAttribute="centerX" id="e1g-6j-bYT"/>
                             <constraint firstItem="nLV-t3-ENK" firstAttribute="leading" secondItem="CGp-DH-v0t" secondAttribute="leading" constant="50" id="len-Wi-j0U"/>
-                            <constraint firstItem="nLV-t3-ENK" firstAttribute="top" secondItem="1Gc-X5-rVh" secondAttribute="bottom" constant="50" id="wC7-Dk-BUR"/>
+                            <constraint firstItem="nLV-t3-ENK" firstAttribute="top" secondItem="1Gc-X5-rVh" secondAttribute="bottom" constant="2" id="wC7-Dk-BUR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CGp-DH-v0t"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="topRated" id="0G3-PR-eth"/>
+                    <tabBarItem key="tabBarItem" title="" systemItem="more" id="0G3-PR-eth"/>
                     <navigationItem key="navigationItem" id="zd8-8L-OCQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -74,6 +98,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1P-4M-7kF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="771.01449275362324" y="148.66071428571428"/>
+        </scene>
+        <!--Page Control Fresno-->
+        <scene sceneID="uQa-XK-FMf">
+            <objects>
+                <viewController id="ROD-gg-fmQ" customClass="CHIPageControlFresno" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tDU-yM-WXt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="x3V-6y-1h5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXh-tS-mL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="beb-x9-mPO">
@@ -94,4 +133,5 @@
             <point key="canvasLocation" x="-139.13043478260872" y="148.66071428571428"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="1" green="0.38546288862537137" blue="0.0079616556051969045" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
