@@ -11,6 +11,10 @@ import UIKit
 class view3: UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var TButton: UIButton!
     
     var startTime: TimeInterval? = nil //Double型
     var timer = Timer() //止めた時に返す値を初期化
@@ -18,8 +22,15 @@ class view3: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //start: true, stop: false, reset: false
+        setButtonEnabled(start: true, stop: false, reset: false)
         // Do any additional setup after loading the view.
+    }
+    
+    func setButtonEnabled(start: Bool, stop: Bool, reset: Bool){
+        self.startButton.isEnabled = start
+        self.stopButton.isEnabled = stop
+        self.resetButton.isEnabled = reset
     }
     
     @objc func update(){
@@ -37,6 +48,9 @@ class view3: UIViewController {
     }
     
     @IBAction func startTimer(_ sender: Any) {
+        //start: false, stop: true, reset: false
+        setButtonEnabled(start: false, stop: true, reset: false)
+        
         self.startTime = Date.timeIntervalSinceReferenceDate
         self.timer = Timer.scheduledTimer(
             timeInterval: 0.01,
@@ -47,6 +61,9 @@ class view3: UIViewController {
     }
     
     @IBAction func stopTimer(_ sender: Any) {
+        //start: true, stop: false, reset: true
+        setButtonEnabled(start: true, stop: false, reset: true)
+        
         if let startTime = self.startTime {
             self.elapsedTime += Date.timeIntervalSinceReferenceDate - startTime
         }
@@ -54,11 +71,20 @@ class view3: UIViewController {
     }
     
     @IBAction func resetTimer(_ sender: Any) {
+        //start: true, stop: false, reset: false
+        setButtonEnabled(start: true, stop: false, reset: false)
+        
         self.startTime = nil //リセットを押すと0になる
         self.timerLabel.text = "00:00:00"
         self.elapsedTime = 0.0
     }
     
+    
+    
+    
+    @IBAction func T(_ sender: Any) {
+        
+    }
     /*
      // MARK: - Navigation
      

@@ -18,53 +18,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gc-X5-rVh">
-                                <rect key="frame" x="144.5" y="429.5" width="125" height="37.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="nLV-t3-ENK">
-                                <rect key="frame" x="50" y="517" width="314" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCF-ga-Egb">
+                                <rect key="frame" x="348" y="113" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="T"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="nLV-t3-ENK">
+                                <rect key="frame" x="9" y="442" width="396" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roV-4J-voo">
-                                        <rect key="frame" x="0.0" y="0.0" width="58" height="30"/>
-                                        <state key="normal" title="Start"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="53"/>
+                                        <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="34"/>
+                                        <state key="normal" title="START">
+                                            <color key="titleColor" red="0.03840376769" green="0.50178108809999999" blue="0.14032370329999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
                                         <connections>
                                             <action selector="startTimer:" destination="SUW-Cs-k9q" eventType="touchUpInside" id="1sc-Nu-ypV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpm-bs-u5p">
-                                        <rect key="frame" x="128" y="0.0" width="58" height="30"/>
-                                        <state key="normal" title="Stop"/>
+                                        <rect key="frame" x="163" y="0.0" width="70" height="53"/>
+                                        <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="34"/>
+                                        <state key="normal" title="STOP">
+                                            <color key="titleColor" red="0.03840376769" green="0.50178108809999999" blue="0.14032370329999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
                                         <connections>
                                             <action selector="stopTimer:" destination="SUW-Cs-k9q" eventType="touchUpInside" id="k57-5U-Ohv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnv-hI-62r">
-                                        <rect key="frame" x="256" y="0.0" width="58" height="30"/>
-                                        <state key="normal" title="Reset"/>
+                                        <rect key="frame" x="326" y="0.0" width="70" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="Hgy-X0-fxu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="34"/>
+                                        <state key="normal" title="RESET">
+                                            <color key="titleColor" red="0.03840376769" green="0.50178108809999999" blue="0.14032370329999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
                                         <connections>
                                             <action selector="resetTimer:" destination="SUW-Cs-k9q" eventType="touchUpInside" id="ISB-qx-RbU"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gc-X5-rVh">
+                                <rect key="frame" x="17" y="325" width="381.5" height="98"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="98"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1Gc-X5-rVh" firstAttribute="centerY" secondItem="zJa-fW-rb1" secondAttribute="centerY" id="1ZG-Xn-jFR"/>
-                            <constraint firstItem="1Gc-X5-rVh" firstAttribute="centerX" secondItem="zJa-fW-rb1" secondAttribute="centerX" id="E6k-qk-psd"/>
-                            <constraint firstItem="CGp-DH-v0t" firstAttribute="trailing" secondItem="nLV-t3-ENK" secondAttribute="trailing" constant="50" id="Tzs-c4-gyb"/>
-                            <constraint firstItem="nLV-t3-ENK" firstAttribute="leading" secondItem="CGp-DH-v0t" secondAttribute="leading" constant="50" id="len-Wi-j0U"/>
-                            <constraint firstItem="nLV-t3-ENK" firstAttribute="top" secondItem="1Gc-X5-rVh" secondAttribute="bottom" constant="50" id="wC7-Dk-BUR"/>
+                            <constraint firstItem="1Gc-X5-rVh" firstAttribute="centerX" secondItem="zJa-fW-rb1" secondAttribute="centerX" id="Frt-8N-aGL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CGp-DH-v0t"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="topRated" id="0G3-PR-eth"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="0G3-PR-eth"/>
                     <navigationItem key="navigationItem" id="zd8-8L-OCQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="TButton" destination="sCF-ga-Egb" id="ROR-88-SiU"/>
+                        <outlet property="resetButton" destination="rnv-hI-62r" id="ss3-Hx-FCb"/>
+                        <outlet property="startButton" destination="roV-4J-voo" id="XEO-hc-24A"/>
+                        <outlet property="stopButton" destination="lpm-bs-u5p" id="yt8-ML-jXi"/>
                         <outlet property="timerLabel" destination="1Gc-X5-rVh" id="VmR-8L-n1w"/>
                     </connections>
                 </viewController>
