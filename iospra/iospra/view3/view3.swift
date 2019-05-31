@@ -14,6 +14,8 @@ class view3: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var TButton: UIButton!
+
     
     var startTime: TimeInterval? = nil //Double型
     var timer = Timer() //止めた時に返す値を初期化
@@ -77,7 +79,10 @@ class view3: UIViewController {
         self.timerLabel.text = "00:00:00"
         self.elapsedTime = 0.0
     }
-    
+
+    @IBAction func T(_ sender: Any) {
+        
+    }
     /*
      // MARK: - Navigation
      
